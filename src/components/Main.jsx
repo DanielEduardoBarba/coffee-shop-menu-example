@@ -2,7 +2,9 @@ import React,{useState} from "react"
 import "./menu.css"
 
 export default function Menu(){
+    
     const [coffees, setCoffees] = useState()
+
     const getCoffees = (temp) =>{
         fetch(`https://api.sampleapis.com/coffee/${temp}`)
         .then(res=>res.json())
